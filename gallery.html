@@ -6,6 +6,8 @@
     <title>Gallery | F1 Car Wash</title>
     <meta name="description" content="View our premium car wash facility and our detailed work.">
     
+    <link rel="icon" href="images/logo.png" type="image/png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,10 +32,10 @@
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="index.html#why-us">Why Us</a></li>
                 <li><a href="index.html#testimonials">Reviews</a></li>
+                <li><a href="index.html#contact">Location</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://wa.me/910000000000" class="btn btn-primary" target="_blank">Book Now</a></li>
+                <li><a href="https://wa.me/918714089898?text=Hello" class="btn btn-primary" target="_blank">Book Now</a></li>
             </ul>
             <div class="hamburger">
                 <div class="bar1"></div>
@@ -56,6 +58,13 @@
     <section class="gallery">
         <div class="container">
             <div class="gallery-grid">
+                <!-- Gallery Item New -->
+                <div class="gallery-item reveal">
+                    <img src="images/image1.jpeg" alt="F1 Car Wash Facility">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                </div>
                 <!-- Gallery Item 1 -->
                 <div class="gallery-item reveal">
                     <img src="images/gallery-1.jpg" alt="Car getting washed" onerror="this.src='https://via.placeholder.com/600x450/1a1a1a/e10600?text=Shop+Exterior'">
@@ -99,10 +108,21 @@
                     </div>
                 </div>
             </div>
+            <div style="text-align: center; margin-top: 4rem;" class="reveal">
+                <a href="index.html#contact" class="explore-link">Visit Us <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
         </div>
     </section>
 
     <div class="racing-stripe"></div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close"><i class="fa-solid fa-xmark"></i></span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Gallery Full Size">
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -117,13 +137,14 @@
                     <div class="social-links">
                         <a href="#"><i class="fa-brands fa-google"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/918714089898?text=Hello" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html#home">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="index.html#why-us">Why Us</a></li>
                         <li><a href="index.html#testimonials">Reviews</a></li>
                         <li><a href="index.html#faq">FAQ</a></li>
@@ -131,12 +152,14 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Top Services</h4>
+                    <h4>Our Services</h4>
                     <ul>
-                        <li><a href="index.html#services">Exterior Wash</a></li>
-                        <li><a href="index.html#services">Full Body Wash</a></li>
-                        <li><a href="index.html#services">Interior Cleaning</a></li>
-                        <li><a href="index.html#services">Engine Cleaning</a></li>
+                        <li><a href="index.html#services">Standard Car Wash</a></li>
+                        <li><a href="index.html#services">Premium Exterior Wash</a></li>
+                        <li><a href="index.html#services">Interior Detail Wash</a></li>
+                        <li><a href="index.html#services">Glass Treatment</a></li>
+                        <li><a href="index.html#services">Tyre Cleaner & Shine</a></li>
+                        <li><a href="index.html#services">Car Perfumes</a></li>
                     </ul>
                 </div>
             </div>
@@ -148,7 +171,7 @@
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/910000000000" class="floating-whatsapp" target="_blank">
+    <a href="https://wa.me/918714089898?text=Hello" class="floating-whatsapp" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
     
