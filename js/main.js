@@ -1,26 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Dynamic Favicon Padding Fix
-    const canvas = document.createElement('canvas');
-    const ctx = canvas.getContext('2d');
-    const img = new Image();
-    img.src = 'images/logo.png';
-    img.onload = () => {
-        const size = Math.max(img.width, img.height);
-        canvas.width = size;
-        canvas.height = size;
-        const x = (size - img.width) / 2;
-        const y = (size - img.height) / 2;
-        ctx.drawImage(img, x, y);
-        const dataUrl = canvas.toDataURL('image/png');
-        let link = document.querySelector("link[rel~='icon']");
-        if (!link) {
-            link = document.createElement('link');
-            link.rel = 'icon';
-            document.head.appendChild(link);
-        }
-        link.href = dataUrl;
-    };
-
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
